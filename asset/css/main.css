@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #fcfcfc;
+}
+.form_container,.score,.activities{
+    max-width:60vw;
+    margin: 2em auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.score span{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    display: block;
+    width:100px;
+    padding-left: .2em;
+    margin-left: .5em;
+}
+.activities{
+    flex-direction: column;
+}
+    .activities div{
+        margin-top: 1em;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        padding: 1em;
+        overflow: auto;
+        height: 200px;
+    }
+.form_container{
+    justify-content: space-evenly;
+    gap: 1em;
+}
+    .form_container form{
+        text-align: center;
+        padding: 1em;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    }
+        .form_container form :is(h2,h3){
+            padding-bottom: 1em;
+        }
+        .form_container form input[type="submit"]{
+            padding: .5em 1em;
+        }
+
+/*utility class*/
+.reset,.bg_earn,.bg_lost{
+    font-weight: bold;
+    line-height: 1.5em;
+}
+.reset{
+    padding: .5em 1em;
+    margin-top: 1em;
+}
+.bg_earn{
+    color: #30ff30;
+}
+.bg_lost{
+    color: #ff4444;
+}
