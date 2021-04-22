@@ -12,7 +12,6 @@
 
 <section class="score">
     Your Gold: <span><?= ($this->session->userdata('score')) ? $this->session->userdata('score') : ""; ?></span>
-    <?= "hello"; ?>
 </section>
 
 <section class="form_container">
